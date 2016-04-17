@@ -52,7 +52,7 @@ void PiObj::genSecMatrix(){
     }
 }
 
-void PiObj::genHash(const ZZ sec, const ZZ ranZ){
+ZZ PiObj::genHash(const ZZ sec, const ZZ ranZ){
     unsigned char * secStr, ranZStr;
     BytesFromZZ(secStr, sec, _strLen);
     BytesFromZZ(ranZStr, ranZ, _strLen);

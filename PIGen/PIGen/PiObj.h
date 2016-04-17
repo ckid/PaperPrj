@@ -27,6 +27,7 @@ class PiObj {
         map< int, ZZ > _secVec;
         ZZ genSeed();
         void ACVCalc();
+        ZZ genHash(const ZZ sec, const ZZ ranZ);
 
 };
 
